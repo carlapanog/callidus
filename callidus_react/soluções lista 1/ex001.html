@@ -1,0 +1,36 @@
+<!--1. Escreva uma função em JavaScript que 
+mostre na tela a mensagem “Bom dia, Mundo!!!”.-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <p id="demo"></p>
+        <script>
+            let dia = "";
+
+            dia = function() {
+            return "Bom dia, Mundo!!! (sem arrow function)";
+            }
+
+            document.getElementById("demo").innerHTML = dia();
+        </script>
+
+        <p id="demo2"></p>
+        <script>
+            let dia2 = "";
+
+            dia2 = () => {
+            return "Bom dia, Mundo!!! (com arrow function)";
+            }
+
+            document.getElementById("demo").innerHTML = dia2();
+        </script>
+
+    </body>
+</html>
+
+
+<p id="demo"></p>
+
+

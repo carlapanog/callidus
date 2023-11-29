@@ -1,0 +1,35 @@
+<!--9. Escreva uma função que calcule e retorne 
+o fatorial de um número inteiro fornecido pelo usuário.-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            let numero = prompt("digite o numero: ")
+
+            fat = function calculaFatorial(num) {
+                if(num < 0) {
+                    return "Número inválido";
+                }
+                if(num==1 || num==0){
+                    return 1; 
+                }
+                return num*calcFatorial(num-1);
+            }
+
+            fat2 = (num) => {
+                if(num < 0) {
+                    return "Número inválido";
+                }
+                if(num==1 || num==0){
+                    return 1; 
+                }
+                return num*calcFatorial(num-1);
+            }
+            
+            window.alert(`o fatorial de ${numero} eh ${fat(numero)}`)
+        </script>
+    </body>
+</html>

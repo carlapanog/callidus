@@ -1,0 +1,47 @@
+<!--7. Escreva uma função que permita contar 
+o número de vogais contidas em uma string fornecida pelo usuário. 
+Por exemplo, o usuário informa a string “Beterraba”, e a função 
+retorna o número 4 (há 4 vogais nessa palavra).-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            let blablabla = prompt("digite a frase: ")
+
+            numVogais = function contaVogais(frase) {
+                var cont = 0;
+                frase = frase.toLowerCase();
+                for(var i = 0; i < frase.length; i++){
+                    if(frase.charAt(i) == "a"||
+                    frase.charAt(i) == "e"||
+                    frase.charAt(i) == "i"||
+                    frase.charAt(i) == "o"||
+                    frase.charAt(i) == "u") {
+                        cont++;
+                    }
+                }
+                return cont;
+            }
+
+            numVogais2 = (frase) => {
+                var cont = 0;
+                frase = frase.toLowerCase();
+                for(var i = 0; i < frase.length; i++){
+                    if(frase.charAt(i) == "a"||
+                    frase.charAt(i) == "e"||
+                    frase.charAt(i) == "i"||
+                    frase.charAt(i) == "o"||
+                    frase.charAt(i) == "u") {
+                        cont++;
+                    }
+                }
+                return cont;
+            }
+
+            window.alert(`numero de vogais: ${numVogais(blablabla)}`)
+        </script>
+    </body>
+</html>

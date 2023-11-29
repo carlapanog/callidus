@@ -1,0 +1,39 @@
+<!--6. Escreva uma função que mostre na tela 
+um número fornecido pelo usuário, porém invertido.
+Por exemplo, o usuário fornece o número 875 e a função
+mostra na tela o número 578.-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            let numero = prompt("digite o numero: ")
+
+            invertido = function inverteNum(num) {
+                var num_invertido = 0;
+                while(num != 0)
+                {
+                    num_invertido = num_invertido * 10;
+                    num_invertido = num_invertido + num % 10;
+                    num = Math.trunc(num/10); 
+                }
+                return num_invertido;
+            }
+
+            invertido2 = (num) => {
+                var num_invertido = 0;
+                while(num != 0)
+                {
+                    num_invertido = num_invertido * 10;
+                    num_invertido = num_invertido + num % 10;
+                    num = Math.trunc(num/10); 
+                }
+                return num_invertido;
+            }
+
+            window.alert(`${numero} invertido eh ${invertido2(numero)}`)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!--10. Escreva uma função em JavaScript que conte 
+quantas vezes um caractere aparece em uma string. 
+Tanto o caractere quanto a string devem ser fornecidos pelo usuário.-->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            let blablabla = prompt("digite a frase: ")
+            let caractere = prompt("digite o caractere a ser buscado: ")
+
+            numCaractere = function contaCaracteres(frase, simbolo) {
+                var cont = 0;
+                frase = frase.toLowerCase();
+                for(var i = 0; i < frase.length; i++){
+                    if(frase.charAt(i) == simbolo) {
+                        cont++;
+                    }
+                }
+                return cont;
+            }
+
+            numCaractere2 = (frase, simbolo) => {
+                var cont = 0;
+                frase = frase.toLowerCase();
+                for(var i = 0; i < frase.length; i++){
+                    if(frase.charAt(i) == simbolo) {
+                        cont++;
+                    }
+                }
+                return cont;
+            }
+
+            window.alert(`numero de ${caractere}'s: na frase eh ${numCaractere(blablabla, caractere)}`)
+        </script>
+    </body>
+</html>

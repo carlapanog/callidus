@@ -1,0 +1,24 @@
+<!--3. Escreva uma função em JavaScript que 
+realize a conversão de uma temperatura
+fornecida em graus Fahrenheit (F) para Celsius (C).-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            let tempCelsius = prompt("digite a temperatura em celsius: ")
+
+            tempF = function convertec2f(tempCelsius) {
+                return (((tempCelsius * 9) / 5) + 32);
+            }
+
+            tempF2 = (tempCelsius) => {
+                return (((tempCelsius * 9) / 5) + 32);
+            }
+
+            window.alert(`${tempCelsius}C eh igual a ${tempF(tempCelsius)}F`)
+        </script>
+    </body>
+</html>

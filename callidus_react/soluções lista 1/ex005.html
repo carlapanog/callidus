@@ -1,0 +1,32 @@
+<!--5. Escreva uma função que encontre a área e 
+o perímetro de um círculo, de acordo com o raio fornecido.-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            let raio = prompt("digite o valor do raio do circulo: ")
+
+            areaC = function calcula_area(raio) {
+                return ((3.14 * raio)*(3.14 * raio));
+            }
+
+            areaC2 = (raio) => {
+                return ((3.14 * raio) * (3.14 * raio));
+            }
+
+            perimetroC = function calcula_perimetro(raio) {
+                return (2 * 3.14 * raio);
+            }
+
+            perimetroC2 = (raio) => {
+                return (2 * 3.14 * raio);
+            }
+
+            window.alert(`a area do circulo de raio ${raio} eh ${areaC(raio)},
+            e seu perimetro eh ${perimetroC(raio)}`)
+        </script>
+    </body>
+</html>
